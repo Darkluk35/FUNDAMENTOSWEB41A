@@ -1,88 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", serif;
+    font-family: "Kanit", serif;
     list-style: none;
+}
+
+body{
+    background-color: #246A73;
 }
 
 a{
     text-decoration: none;
-    color: #000;
+    color: black;
 }
 
 header{
-    background-color: #7FB069;
+    background-color: #368F8B;
     padding: 1rem 2.5rem;
     text-align: center;
-    color: #fff;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main{
-    display: flex;
-    padding: 3rem;
-}
-
-footer{
-    display: flex;
-    background-color: #7FB069;
-    padding: 2rem;
-    justify-content: center;
-}
-
-.search-form{
-    display: flex;
-    gap: 0.5rem;
-    width: 35%;
-}
-
-.search-form input{
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 100vw;
-    flex-grow: 1;
-}
-
-.search-form input::placeholder{
-    font-style: italic;
-}
-
-.search-form input:focus{
-    outline: none;
-}
-
-.search-form button{
-    border: none;
-    background-color: #000;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 100vw;
-    transition: 200ms;
-}
-
-.search-form button:hover{
-    background-color: #fff;
-    color: #000;
-}
-
-.nav-links ul {
+.nav-links ul{
     display: flex;
     gap: 2rem;
 }
 
 .nav-links ul li{
     font-size: 1.2rem;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
 .nav-links ul li:hover{
-    text-decoration: underline #fff 3px;
-    transform: scale(1.1);
+    
+    transform: scale(1.4);
 }
 
 .logo-container{
@@ -91,73 +47,44 @@ footer{
 
 .logo-container img{
     width: 100%;
-    border-radius: 100%;
+    border-radius: 50%;
 }
-
-.card-container{
-    flex-grow: 1;
-    display: flex;
-    gap: 2rem;
-    flex-direction: column;
-}
-
 .card{
-    width: 80%;
-    background-color: #7FB069;
-    border-radius: 10px;
-    margin: 2rem;
-    display: flex;
-}
-
-.card-image-container{
-    flex: 1;
-}
-
-.card-image-container img{
     width: 30rem;
+    border-radius: 10px;
+    background-color: #368F8B;
+    margin: 2rem;
+    display: inline-block;
+}
+
+.card-image-container {
+    width: 100%;
     height: 100%;
-    border-radius: 10px 0 0 10px;
+}
+
+.card-image-container img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 10px 10px 0 0;
     overflow: hidden;
 }
 
-.card-info-container{
+.card-info-container
+{
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    text-align: right;
 }
-
 .card-info-container button{
     border: none;
-    background-color: #fff;
+    background-color: white;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     margin-top: 0.5rem;
     font-weight: bold;
-    align-self: flex-end;
-    margin: 8rem 0 0 0;
-}
-
-.aside-panel{
-    width: 20%;
-    background-color: #7FB069;
-    border-radius: 10px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.aside-panel h2{
-    padding: 2rem 0 0.5rem 0;
-    border-bottom: 2px solid #fff;
 }
 
 .footer-links{
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    align-items: center;
+background-color: #368F8B;;
 }
 
 .footer-links img{
