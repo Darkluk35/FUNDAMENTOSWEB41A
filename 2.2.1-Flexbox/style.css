@@ -20,24 +20,70 @@ header{
     background-color: #368F8B;
     padding: 1rem 2.5rem;
     text-align: center;
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-links ul{
+main{
+    display: flex;
+    padding: 3rem;
+}
+
+footer{
+    display: flex;
+    background-color:#368F8B;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.search-form{
+    display: flex;
+    gap: 0.5rem;
+    width: 35%;
+}
+
+.search-form input{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 100vw;
+    flex-grow: 1;
+}
+
+.search-form input::placeholder{
+    font-style: italic;
+}
+
+.search-form input:focus{
+    outline: none;
+}
+
+.search-form button{
+    border: none;
+    background-color: #000;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 100vw;
+    transition: 200ms;
+}
+
+.search-form button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.nav-links ul {
     display: flex;
     gap: 2rem;
 }
 
 .nav-links ul li{
     font-size: 1.2rem;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .nav-links ul li:hover{
-    
     transform: scale(1.4);
 }
 
@@ -47,57 +93,80 @@ header{
 
 .logo-container img{
     width: 100%;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .card-container{
-    padding: 3rem;
-        display: flex;
-        gap: 3rem;
-        flex-direction: column;
-    
-}
-.card{
-    width: 50rem;
-    border-radius: 10px;
-    background-color: #368F8B;
-    margin: 2rem;
-    display: flex;    
+    flex-grow: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
 }
 
-.card-image-container {
+.card{
+    width: 80%;
+    background-color:#368F8B;
+    border-radius: 10px;
+    margin: 2rem;
+    display: flex;
+}
+
+.card-image-container{
     flex: 1;
 }
 
-.card-image-container img {
+.card-image-container img{
     width: 30rem;
     height: 100%;
     border-radius: 10px 0 0 10px;
     overflow: hidden;
 }
 
-.card-info-container
-{
+.card-info-container{
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap:   1rem;
+    gap: 1rem;
 }
+
 .card-info-container button{
     border: none;
-    background-color: white;
+    background-color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     margin-top: 0.5rem;
     font-weight: bold;
     align-self: flex-end;
-    margin: 16.5rem 0 0 0;
+    margin: 8rem 0 0 0;
+}
+
+.aside-panel{
+    width: 20%;
+    background-color: #368F8B;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aside-panel h2{
+    padding: 2rem 0 0.5rem 0;
+    border-bottom: 2px solid #fff;
 }
 
 .footer-links{
-background-color: #368F8B;;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    background-color: #368F8B;
 }
 
 .footer-links img{
     width: 2rem;
+}
+
+.footer-links li:hover{
+    transform: scale(1.4);
 }
