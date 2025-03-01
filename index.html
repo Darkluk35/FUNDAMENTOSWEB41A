@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box-Model</title>
+    <title>Flexbox</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,6 +15,10 @@
         />
       </div>
       <h1>Lasercito 3D</h1>
+      <form class="search-form">
+        <input type="text" placeholder="Buscar..." />
+        <button>Buscar</button>
+      </form>
       <nav class="nav-links">
         <ul>
           <li><a href="#">Inicio</a></li>
@@ -25,56 +29,223 @@
       </nav>
     </header>
     <main>
-      <div class="card-container">
-        <div class="card">
-          <div class="card-image-container">
-            <img
-              src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/480697941_122202098906182328_8339609630806635343_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YDK7N8QJg-sQ7kNvgHSyuy7&_nc_oc=Adh9qFwrS1J7hZ4rfgwIP4lEQ3LpJwDRVPkXTKjVXqrKhDIXB0I1os5Ri0F6HEWZL8pZHVx1kE5fS_Xxu7koXHo9&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=AqgaIVOzFq3JovkGxb6AMC-&oh=00_AYBEt0NJsKqXqQui19po2X2Ul0iw_jbbxHYAcvHrWLthZQ&oe=67C14411"
-              alt="FAN-COVER"
-            />
+      <section class="home-container">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-image-container">
+              <img
+                src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/480697941_122202098906182328_8339609630806635343_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YDK7N8QJg-sQ7kNvgHSyuy7&_nc_oc=Adh9qFwrS1J7hZ4rfgwIP4lEQ3LpJwDRVPkXTKjVXqrKhDIXB0I1os5Ri0F6HEWZL8pZHVx1kE5fS_Xxu7koXHo9&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=AqgaIVOzFq3JovkGxb6AMC-&oh=00_AYBEt0NJsKqXqQui19po2X2Ul0iw_jbbxHYAcvHrWLthZQ&oe=67C14411"
+                alt="FAN-COVER"
+              />
+            </div>
+            <div class="card-info-container">
+              <h1>FAN COVER</h1>
+              <p>🔥🌀 ¡Dale a tu PC el poder del Sharingan! 🌀🔥</p>
+              <p>
+                ¿Eres un verdadero fan de Naruto y quieres llevar tu equipo
+                gamer al siguiente nivel? 🎮✨ Nuestra rejilla para ventilador
+                de 120mm inspirada en el Mangekyou Sharingan de Kakashi no solo
+                luce increíble, sino que también protege y mejora el flujo de
+                aire de tu PC.
+              </p>
+              <button>Más Información</button>
+            </div>
           </div>
-          <div class="card-info-container">
-            <h1>Heading</h1>
-            <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
-            <button>Read More</button>
+          <div class="card">
+            <div class="card-image-container">
+              <img
+                src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/480103673_122200677050182328_313787579911181985_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Vz-uU0CMQI8Q7kNvgFMSL1b&_nc_oc=AdgfwOAn--3F_YVwxWT2ZQWp_KBugX5Ck_sTo_vL5yvDHxlCS2Jk8ZdqdCsgua0YJn9fKXwVh0w0KYIOJv3mBE95&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=AeSupmyJgq2iMS9F0wSjnJu&oh=00_AYCgqt-uHz4JKhwfaKRK2VnQ4qXCGDLqHk9HKZE-xYjM7w&oe=67C13055"
+                alt="Esferas_navideñas"
+              />
+            </div>
+            <div class="card-info-container">
+              <h1>ESFERAS</h1>
+              <p>
+                🎄✨ Haz de tu árbol de Navidad algo único y lleno de amor ✨🎄
+              </p>
+              <p>
+                ¿Te imaginas un árbol decorado con los nombres de las personas y
+                mascotas que más amas? ❤️ Estas esferas navideñas personalizadas
+                están hechas en impresión 3D con detalles hermosos y
+                resistentes.
+              </p>
+              <button>Más Información</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image-container">
+              <img
+                src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/479941431_122200689590182328_6695569432649157171_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4Gyz6JgZESAQ7kNvgG3pKrT&_nc_oc=AdghvQaXsvyfDl9Ds3GmFZKGPs9voaFlsQ1OpOPIkAEK78kugjsDRlgfIaCi_OJEXl4JQf39YZoZ4d95KWfTitee&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=Ahg1ImOVOIjOPdjeeN_8kQz&oh=00_AYB9TOx0BsO7TSOcc8MXsF-4dosOp4uz0uqF59hXFyyYNA&oe=67C14A32"
+                alt="star-3d"
+              />
+            </div>
+            <div class="card-info-container">
+              <h1>ESTRELLA</h1>
+              <p>
+                ✨ ¡Dale un toque mágico a tu Navidad con esta estrella
+                inspirada en Mario Bros! ✨
+              </p>
+              <p>
+                Impreso en 3D con gran detalle y colores vibrantes, este adorno
+                exclusivo transformará tu pino en el centro de atención. 🎄⭐ Ya
+                sea para los fanáticos de los videojuegos o para quienes buscan
+                decorar con algo único, esta estrella es imprescindible para tu
+                hogar.
+              </p>
+              <button>Más Información</button>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-image-container">
+
+        <div class="aside-panel">
+          <h2>Categorias</h2>
+          <h2>Relevantes</h2>
+          <h2>Mas vistos</h2>
+          <h2>Mas comprados</h2>
+          <h2>Bajos costos</h2>
+          <h2>Recien agregados</h2>
+        </div>
+      </section>
+      <section class="blog-container">
+        <div class="blog-card big-blog-card">
+          <div class="blog-card-image-container">
             <img
-              src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/480103673_122200677050182328_313787579911181985_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Vz-uU0CMQI8Q7kNvgFMSL1b&_nc_oc=AdgfwOAn--3F_YVwxWT2ZQWp_KBugX5Ck_sTo_vL5yvDHxlCS2Jk8ZdqdCsgua0YJn9fKXwVh0w0KYIOJv3mBE95&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=AeSupmyJgq2iMS9F0wSjnJu&oh=00_AYCgqt-uHz4JKhwfaKRK2VnQ4qXCGDLqHk9HKZE-xYjM7w&oe=67C13055"
-              alt="Esferas_navideñas"
+              src="https://www.3dmarket.mx/wp-content/uploads/2023/11/Impresora-FDM-Ender-3-V3-KE-de-Creality.webp"
+              alt="printer-use"
             />
           </div>
-          <div class="card-info-container">
-            <h1>Heading</h1>
-            <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
-            <button>Read More</button>
+          <div class="blog-card-info-container">
+            <h1>Impresora de entrada</h1>
+            <p>
+              La Creality Ender-3 V3 KE es una impresora FDM destacada por su
+              nivelado automático CR Touch, extrusor Sprite Direct Drive,
+              tornillos de plomo duales en Z, carriles lineales y pantalla
+              táctil de 4,3″. UI táctil con barra de pestañas intuitiva; Se
+              pueden realizar autopruebas inteligentes, como la compensación del
+              eje Z y la nivelación automática, con un solo clic; Vista previa
+              del modelo en tiempo real y gráficos dinámicos vívidos de los
+              parámetros de impresión.
+            </p>
+            <button>Leer Articulo</button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-image-container">
+
+        <div class="blog-card">
+          <div class="blog-card-image-container">
             <img
-              src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/479941431_122200689590182328_6695569432649157171_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4Gyz6JgZESAQ7kNvgG3pKrT&_nc_oc=AdghvQaXsvyfDl9Ds3GmFZKGPs9voaFlsQ1OpOPIkAEK78kugjsDRlgfIaCi_OJEXl4JQf39YZoZ4d95KWfTitee&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=Ahg1ImOVOIjOPdjeeN_8kQz&oh=00_AYB9TOx0BsO7TSOcc8MXsF-4dosOp4uz0uqF59hXFyyYNA&oe=67C14A32"
-              alt="star-3d"
+              src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/474474770_122194740638182328_1317304599422156660_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=B51JZIhBsFsQ7kNvgEb1oL9&_nc_oc=Adgmiwi-Vs7WVdb3RyHgIwEu6GBHF5hG7PclX0dY8qSqEjwHxJvLqkorjQvAfMr6G3-tCZUmzJqofttvyI_7Q-S2&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=AC6foo3xklQXLdLcnIyQtX3&oh=00_AYAEa0rMcHeIbnX0zRBjG1DPKKgUOZ0m2g4h4kjU_Waydw&oe=67C580B4"
+              alt="heart"
             />
           </div>
-          <div class="card-info-container">
-            <h1>Heading</h1>
-            <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
-            <button>Read More</button>
+          <div class="blog-card-info-container">
+            <h1>Corazon</h1>
+            <p>
+              ¡Sorprende a tu ser querido con nuestra cautivadora caja de
+              corazón con abertura mecánica de remolino, hecha con madera MDF!
+              💖🎁
+            </p>
+            <button>Más Información</button>
           </div>
         </div>
-      </div>
+        <div class="blog-card">
+          <div class="blog-card-image-container">
+            <img
+              src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/474471508_122194739978182328_8958866243477220076_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7KEYKQ246yAQ7kNvgG169hH&_nc_oc=AdikZrMhZDcxVNFrz-WvWnkefN1wwc5CZztMJNX--tVjXMthamCLtU6UFj-ZQ0o5mJTbRxJ4Wa7QXrAikdtNEjMw&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=AI9lGXqLL7-CjAtZV2vgat3&oh=00_AYCMVasmKIxj22CNOvoWwIHWYxvQw0GbWHiD10b25VnJ8w&oe=67C58822"
+              alt="mom"
+            />
+          </div>
+          <div class="blog-card-info-container">
+            <h1>Llavero mama</h1>
+            <p>
+              ¡Celebra a mamá con nuestros adorables llaveros "Deformitos"
+              impresos en 3D! 🌸🔑
+            </p>
+            <button>Más Información</button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image-container">
+            <img
+              src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/474314543_122194738154182328_3037250592833837638_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nAeIx3GGb10Q7kNvgFJPRuz&_nc_oc=Adh5NktslMfZIsgPuDHny0JsKO-6jYw3tSTBahjiXKjgqKXbP4H63w1SQ218dNqiPn7YOPCvsntdf5PqJm1Ht-Iq&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=AKe1FdDhr2skZsfSJ6LzbJf&oh=00_AYCp9BAO_sD7IcWLwh75LQW4SusMbNRhdoIGFbZEGCUKDA&oe=67C58A9F"
+              alt="box flower"
+            />
+          </div>
+          <div class="blog-card-info-container">
+            <h1>Caja para rosa</h1>
+            <p>
+              ¡Sorprende a mamá con un regalo único y encantador este Día de las
+              Madres con nuestra caja portaflor de madera MDF! 🌷🎁 Esta hermosa
+              caja no solo es un regalo, sino un símbolo de amor y gratitud que
+              mamá atesorará para siempre.
+            </p>
+            <button>Más Información</button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image-container">
+            <img
+              src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/474029509_122194511492182328_2849466287047831915_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Eu-0fecMfeMQ7kNvgE7vf1s&_nc_oc=Adj5uHyicNmVQoOelNW9ptGxtK7eTOXpJ2QZYZMUC00pPWwYk8hVRk19YeSmBnn1svkNs6aPbtCfsVYFO7jFneOU&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=AdUfT1wGOiwWjjecsv52UwX&oh=00_AYA2S-8yKiO1U-ccIHWaqS24GnvMJ9O7DC8yioE7Yk7w2Q&oe=67C5B272"
+              alt="cup"
+            />
+          </div>
+          <div class="blog-card-info-container">
+            <h1>Trofeo Chancla</h1>
+            <p>
+              ¡Celebra a mamá con un toque de humor y gratitud con nuestro
+              trofeo en forma de chancla de madera MDF para el Día de las
+              Madres! 🏆👡 Este original trofeo es un homenaje a esos momentos
+              inolvidables en los que mamá nos educa con amor y determinación.
+            </p>
+            <button>Más Información</button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image-container">
+            <img
+              src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/473189113_122193219968182328_3954389483456694283_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3td48mI566sQ7kNvgHC1xI_&_nc_oc=Adg2lQSYiMYet86fNBk9nBtWzaN6h57qcgJJLS-7aioDazV0MWoQ8rijwqc3OYb82jT4HfVTU2fbEByJDAbrkz6g&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=AlbIf49MxFNHgQdftO02BKD&oh=00_AYCq9ONeOsqFQM_jq_z7vGqwPKnLG6CTNGNSeSpVK4qWTw&oe=67C59478"
+              alt="One Piece"
+            />
+          </div>
+          <div class="blog-card-info-container">
+            <h1>Going Merry</h1>
+            <p>
+              ¡Zarpa hacia aventuras épicas con nuestro increíble barco de One
+              Piece, el Going Merry, hecho con madera MDF! 🚢⚓️ Captura la
+              esencia de la legendaria nave de los Piratas del Sombrero de Paja
+              en un impresionante modelo tridimensional que hará las delicias de
+              todos los fans de la serie.
+            </p>
+            <button>Más Información</button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image-container">
+            <img
+              src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/472415712_122192422808182328_7301998270574262017_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FRZSbfvr5k0Q7kNvgFnavUL&_nc_oc=AdjRjbVwRGoMxx3LmY_0kMD-a2i1Hl2Y0D56ePycdQJ911tzfTq0fBEwp95l95bpF6l0xFBo_hK89ShthNVD6IGg&_nc_zt=23&_nc_ht=scontent.fjal3-1.fna&_nc_gid=Ap4BOs02tBqgag-pOaS23xq&oh=00_AYCepNVS2Y1hnAvtMLYhtEI5u_eBdi-a9w1pVWEJHM5A7Q&oe=67C5834E"
+              alt="Flork"
+            />
+          </div>
+          <div class="blog-card-info-container">
+            <h1>Llaveros Pareja Deformitos</h1>
+            <p>
+              ¡Celebra el amor y la conexión con nuestros adorables llaveros
+              impresos en 3D de pareja "Deformitos"! 🌟💑 Estos encantadores
+              llaveros capturan la esencia del amor y la complicidad, siendo el
+              regalo perfecto para tu persona especial en cualquier ocasión.
+            </p>
+            <button>Más Información</button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer-links">
-      <ul>
+    <footer>
+      <ul class="footer-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
         <li>
-          <a href="#"
+          <a href="https://www.facebook.com/profile.php?id=61555469862839"
             ><img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png"
               alt="Social-facebook"
